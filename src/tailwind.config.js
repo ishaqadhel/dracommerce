@@ -10,7 +10,21 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['Inter', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                cerise: {
+                    50: "#fad1dd",
+                    100: "#f5a3ba",
+                    200: "#f07598",
+                    300: "#ee5d86",
+                    400: "#ec4675",
+                    500: "#ea3266",
+                    600: "#e71853",
+                    700: "#d0164a",
+                    800: "#b91342",
+                    900: "#a2113a",
+                },
             },
         },
     },
