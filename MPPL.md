@@ -4,13 +4,13 @@
 
 ### 1. Melakukan Pendaftaran
 **Status Pengerjaan:** [ ]
-- Page Template [ ]
+- Page Template [✔️]
 - Front End [ ]
 - Back End [ ]
 
 ### 2. Melihat Barang
 **Status Pengerjaan:** [ ]
-- Page Template [ ]
+- Page Template [✔️]
 - Front End [ ]
 - Back End [ ]
 
@@ -27,7 +27,7 @@
 - Back End [ ]
 
 ### 5. Melakukan Pembelian Barang
-**Status Pengerjaan:** [ ]
+**Status Pengerjaan:** [✔️]
 - Page Template [ ]
 - Front End [ ]
 - Back End [ ]
@@ -39,7 +39,7 @@
 - Back End [ ]
 
 ### 7. Melihat Detail Barang
-**Status Pengerjaan:** [ ]
+**Status Pengerjaan:** [✔️]
 - Page Template [ ]
 - Front End [ ]
 - Back End [ ]
