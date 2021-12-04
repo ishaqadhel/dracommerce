@@ -130,7 +130,7 @@
                                                     >Pengaturan Pengguna</a
                                                 >
                                                 <a
-                                                    href="#"
+                                                    href="{{route('admin.order.index')}}"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                     >Pengaturan Order</a
                                                 >

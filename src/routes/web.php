@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\AdminOrderController;
 use App\Http\Controllers\Admin\AdminProductController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\CartController;
@@ -54,6 +55,11 @@ Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->grou
         Route::get('/{id}/edit', [AdminProductController::class, 'edit'])->name('edit');
         Route::put('/{id}', [AdminProductController::class, 'update'])->name('update');
         Route::delete('/{id}', [AdminProductController::class, 'destroy'])->name('destroy');
+    });
+    Route::middleware(AdminMiddleware::class)->prefix('order')->name('order.')->group(function () {
+        Route::get('/', [AdminOrderController::class, 'index'])->name('index');
+        Route::get('/{id}/edit', [AdminOrderController::class, 'edit'])->name('edit');
+        Route::put('/{id}', [AdminOrderController::class, 'update'])->name('update');
     });
 });
 
