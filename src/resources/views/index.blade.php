@@ -130,7 +130,7 @@
                             role="list"
                             class="grid grid-cols-1 mx-4 space-x-8 sm:mx-6 lg:mx-0 lg:space-x-0 md:grid-cols-3 lg:grid-cols-4 gap-x-8"
                         >
-                            <!-- Loop Here -->
+                            @foreach ($products as $product)
                             <li
                                 class="inline-flex flex-col text-center lg:w-auto"
                             >
@@ -139,7 +139,7 @@
                                         class="w-full overflow-hidden bg-gray-200 rounded-md aspect-w-1 aspect-h-1"
                                     >
                                         <img
-                                            src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg"
+                                            src="{{asset('images/'.$product->image)}}"
                                             alt="Black machined steel pen with hexagonal grip and small white logo at top."
                                             class="object-cover object-center w-full h-full group-hover:opacity-75"
                                         />
@@ -148,7 +148,7 @@
                                         <p
                                             class="text-sm text-gray-500"
                                         >
-                                            Black
+                                            {{ $product->productCategory->name }}
                                         </p>
                                         <h3
                                             class="mt-1 font-semibold text-gray-900"
@@ -157,15 +157,16 @@
                                                 <span
                                                     class="absolute inset-0"
                                                 ></span>
-                                                Machined Pen
+                                                {{ $product->name }}
                                             </a>
                                         </h3>
                                         <p class="mt-1 text-gray-900">
-                                            Rp 3,500,000
+                                            Rp {{ $product->price }}
                                         </p>
                                     </div>
                                 </div>
                             </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
