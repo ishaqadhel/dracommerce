@@ -225,7 +225,7 @@
                     <h1
                         class="text-4xl font-extrabold tracking-tight text-gray-900"
                     >
-                        Manajemen Produk
+                        Manajemen Order
                     </h1>
                 </div>
                 <div class='-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8'>
@@ -238,25 +238,31 @@
                                             scope='col'
                                             class='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
                                         >
-                                            Nama
+                                            Nomor Invoice
                                         </th>
                                         <th
                                             scope='col'
                                             class='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
                                         >
-                                            Kategori
+                                            Produk
                                         </th>
                                         <th
                                             scope='col'
                                             class='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
                                         >
-                                            Stok
+                                            Status
                                         </th>
                                         <th
                                             scope='col'
                                             class='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
                                         >
-                                            Harga
+                                            Payment
+                                        </th>
+                                        <th
+                                            scope='col'
+                                            class='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
+                                        >
+                                            Total
                                         </th>
                                         <th
                                             scope='col'
@@ -280,34 +286,31 @@
                                         <tr>
                                             <td class='px-6 py-4 whitespace-nowrap'>
                                                 <div class='flex items-center'>
-                                                    <div class='flex-shrink-0 w-10 h-10'>
-                                                        <Image
-                                                            class='w-10 h-10 rounded-full'
-                                                            src='https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg'
-                                                            alt=''
-                                                            width={50}
-                                                            height={50}
-                                                        />
-                                                    </div>
-                                                    <div class='ml-4'>
+                                                    <div>
                                                         <div class='text-sm font-medium text-gray-900'>
-                                                            VR 2000
+                                                            INV/GP/26012021/001001                                                    
+                                                        </div>
+                                                        <div class='text-sm text-gray-500'>
+                                                            27 Juni 2021
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> 
                                             </td>
                                             <td class='px-6 py-4 whitespace-nowrap'>
                                                 <div class='text-sm text-gray-500'>
-                                                    Aksesoris
+                                                    Virtual Reality (2x)
                                                 </div>
                                             </td>
                                             <td class='px-6 py-4 whitespace-nowrap'>
                                                 <span class='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                                                    10
+                                                    Sudah Sampai
                                                 </span>
                                             </td>
                                             <td class='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                                                Rp 150,000
+                                                Gopay
+                                            </td>
+                                            <td class='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
+                                                Rp 350,000
                                             </td>
                                             <td class='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
                                                     <a 
@@ -329,15 +332,6 @@
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class='my-5'>
-                    <a href='#'>
-                        <button
-                            class='flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-cerise-500 hover:bg-cerise-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cerisebg-cerise-500'
-                        >
-                            Tambah Produk
-                        </button>
-                    </a>
                 </div>
             </div>
 
