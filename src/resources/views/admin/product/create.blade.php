@@ -102,14 +102,7 @@
                                     class="block text-sm font-medium text-gray-700"
                                     >Deskripsi</label
                                 >
-                                <input
-                                    type="text"
-                                    name="description"
-                                    id="description"
-                                    autocomplete="description"
-                                    required
-                                    class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cerise-500 focus:border-cerise-500 sm:text-sm"
-                                />
+                                <textarea id="description" name="description" rows="3" required class="block w-full max-w-lg border border-gray-300 rounded-md shadow-sm focus:ring-cerise-500 focus:border-cerise-500 sm:text-sm"></textarea>
                             </div>
 
                             <div class="col-span-4 sm:col-span-2">

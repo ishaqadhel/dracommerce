@@ -90,7 +90,7 @@
                                 name="name"
                                 id="name"
                                 autocomplete="name"
-                                value={{ $product->name }}
+                                value="{{ $product->name }}"
                                 required
                                 class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cerise-500 focus:border-cerise-500 sm:text-sm"
                             />
@@ -128,9 +128,7 @@
                                 class="block text-sm font-medium text-gray-700"
                                 >Deskripsi</label
                             >
-                            <textarea id="description" name="description" rows="3" required class="block w-full max-w-lg border border-gray-300 rounded-md shadow-sm focus:ring-cerise-500 focus:border-cerise-500 sm:text-sm">
-                            {{ $product->description }}
-                            </textarea>
+                            <textarea id="description" name="description" rows="3" required class="block w-full max-w-lg border border-gray-300 rounded-md shadow-sm focus:ring-cerise-500 focus:border-cerise-500 sm:text-sm">{{ $product->description }}</textarea>
                         </div>
 
                         <div class="col-span-4 sm:col-span-2">
