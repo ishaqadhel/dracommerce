@@ -140,12 +140,12 @@
                                                 class="flex justify-center h-full space-x-8"
                                             >
                                                 <a
-                                                    href="#"
+                                                    href="{{route('index')}}"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                     >Beranda</a
                                                 >
                                                 <a
-                                                    href="#"
+                                                    href="{{route('product.index')}}"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                     >Katalog</a
                                                 >
