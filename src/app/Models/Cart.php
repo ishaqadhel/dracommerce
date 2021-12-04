@@ -22,6 +22,7 @@ class Cart extends Model
      * @var array
      */
     protected $fillable = [
+        'id_user',
         'total',
     ];
 

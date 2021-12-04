@@ -249,7 +249,7 @@
 
                                             <div class="flow-root">
                                                 <a
-                                                    href="#"
+                                                    href="{{route('cart.index')}}"
                                                     class="flex items-center p-2 -m-2 group"
                                                 >
                                                     <!-- Heroicon name: outline/shopping-cart -->

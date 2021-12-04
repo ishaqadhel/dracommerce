@@ -22,6 +22,8 @@ class ProductCart extends Model
      * @var array
      */
     protected $fillable = [
+        'id_product',
+        'id_cart',
         'quantity',
     ];
 

@@ -128,12 +128,15 @@
                         >
                             Beli Sekarang
                         </button>
-                        <button
-                            type="button"
-                            class="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-cerise-700 bg-cerise-50 hover:bg-cerise-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-cerise-500"
-                        >
-                            Masukan Keranjang
-                        </button>
+                        <form method="POST" action="{{ route('cart.addItem', ['id' => $product->id]) }}">
+                            @csrf
+                            <button
+                                type="submit"
+                                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-cerise-700 bg-cerise-50 hover:bg-cerise-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-cerise-500"
+                            >
+                                Masukan Keranjang
+                            </button>
+                        </form>
                     </div>
 
                     <div class="pt-10 mt-10 border-t border-gray-200">
@@ -380,11 +383,6 @@
                                     </p>
 
                                     <div class="flex items-center mt-4">
-                                        <!--
-              Heroicon name: solid/star
-
-              Active: "text-yellow-400", Default: "text-gray-300"
-            -->
                                         <svg
                                             class="flex-shrink-0 w-5 h-5 text-yellow-400"
                                             xmlns="http://www.w3.org/2000/svg"

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminProductController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\ProductController;
 use App\Http\Middleware\AdminMiddleware;
@@ -24,6 +25,11 @@ Route::get('/', [LandingController::class, 'index'])->name('index');
 Route::prefix('product')->name('product.')->group(function () {
     Route::get('/', [ProductController::class, 'index'])->name('index');
     Route::get('/{id}', [ProductController::class, 'show'])->name('show');
+});
+
+Route::middleware(['auth'])->prefix('cart')->name('cart.')->group(function () {
+    Route::get('/', [CartController::class, 'index'])->name('index');
+    Route::post('/add-item/{id}', [CartController::class, 'addItem'])->name('addItem');
 });
 
 Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->group(function () {
