@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\LandingController;
+use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/', [LandingController::class, 'index'])->name('index');
+
+Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', [AdminDashboardController::class, 'index'])->name('index');
 });
 
 Route::get('/dashboard', function () {

@@ -62,9 +62,9 @@
                             <p
                                 class="flex-1 text-sm font-medium text-center text-white lg:flex-none"
                             >
-                                Dapatkan Voucher Gratis Ongkir Sampai 100%
+                                Selamat Datang Di Admin Panel
                             </p>
-                            @auth
+
                             <div
                                 class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
                             >
@@ -89,26 +89,6 @@
                                     </p>
                                 </form>
                             </div>
-                            @else     
-                            <div
-                                class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
-                            >
-                                <a
-                                    href="{{ route('register') }}"
-                                    class="text-sm font-medium text-white hover:text-gray-100"
-                                    >Buat Akun</a
-                                >
-                                <span
-                                    class="w-px h-6 bg-gray-600"
-                                    aria-hidden="true"
-                                ></span>
-                                <a
-                                    href="{{ route('login') }}"
-                                    class="text-sm font-medium text-white hover:text-gray-100"
-                                    >Masuk Akun</a
-                                >
-                            </div>
-                            @endauth
                         </div>
                     </div>
 
@@ -147,22 +127,23 @@
                                                 <a
                                                     href="#"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                                                    >Katalog</a
+                                                    >Pengaturan Pengguna</a
                                                 >
                                                 <a
                                                     href="#"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                                                    >Tentang Kami</a
+                                                    >Pengaturan Order</a
                                                 >
-                                                @auth
-                                                    @if(auth()->user()->role == 2)
-                                                    <a
-                                                        href="#"
-                                                        class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                                                        >Admin Panel</a
-                                                    >
-                                                    @endif
-                                                @endauth
+                                                <a
+                                                    href="#"
+                                                    class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                                                    >Pengaturan Produk</a
+                                                >
+                                                <a
+                                                    href="#"
+                                                    class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                                                    >Laporan Keuangan</a
+                                                >
                                             </div>
                                         </div>
                                     </div>
@@ -211,7 +192,6 @@
                                     <div
                                         class="flex items-center justify-end flex-1"
                                     >
-                                    @auth
                                         <div class="flex items-center lg:ml-8">
                                             <div class="flex space-x-8">
                                                 <div class="flex">
@@ -241,45 +221,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-
-                                            <span
-                                                class="w-px h-6 mx-4 bg-gray-200 lg:mx-6"
-                                                aria-hidden="true"
-                                            ></span>
-
-                                            <div class="flow-root">
-                                                <a
-                                                    href="#"
-                                                    class="flex items-center p-2 -m-2 group"
-                                                >
-                                                    <!-- Heroicon name: outline/shopping-cart -->
-                                                    <svg
-                                                        class="flex-shrink-0 w-6 h-6 text-gray-400 group-hover:text-gray-500"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                                                        />
-                                                    </svg>
-                                                    <span
-                                                        class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800"
-                                                        >0</span
-                                                    >
-                                                    <span class="sr-only"
-                                                        >items in cart, view
-                                                        bag</span
-                                                    >
-                                                </a>
-                                            </div>
                                         </div>
-                                    @endauth
                                     </div>
                                 </div>
                             </div>
