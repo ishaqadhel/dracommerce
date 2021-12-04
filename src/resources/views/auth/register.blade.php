@@ -52,6 +52,33 @@
                             <input id="password_confirmation" name="password_confirmation" type="password" autocomplete="current-password" required class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-cerise-400 focus:border-cerise-400 sm:text-sm">
                         </div>
                     </div>
+
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">
+                        Nomor Handphone
+                        </label>
+                        <div class="mt-1">
+                            <input id="phone" name="phone" type="phone" required class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-cerise-400 focus:border-cerise-400 sm:text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="address" class="block text-sm font-medium text-gray-700">
+                        Alamat Rumah
+                        </label>
+                        <div class="mt-1">
+                            <input id="address" name="address" type="textarea" autocomplete="address" required class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-cerise-400 focus:border-cerise-400 sm:text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="zip" class="block text-sm font-medium text-gray-700">
+                        Kode Pos
+                        </label>
+                        <div class="mt-1">
+                            <input id="zip" name="zip" type="number" required class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-cerise-400 focus:border-cerise-400 sm:text-sm">
+                        </div>
+                    </div>
             
                     <div>
                         <button type="submit" class="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-cerise-600 hover:bg-cerise-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cerise-400">
