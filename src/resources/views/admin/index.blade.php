@@ -42,7 +42,7 @@
                 </dt>
                 <dd class="flex items-baseline pb-6 ml-16 sm:pb-7">
                     <p class="text-2xl font-semibold text-gray-900">
-                        71,897
+                        {{$usersCount}}
                     </p>
                     <p
                         class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
@@ -62,7 +62,7 @@
                             />
                         </svg>
                         <span class="sr-only"> Increased by </span>
-                        122
+                        0
                     </p>
                     <div
                         class="absolute inset-x-0 bottom-0 px-4 py-4 bg-gray-50 sm:px-6"
@@ -111,7 +111,7 @@
                 </dt>
                 <dd class="flex items-baseline pb-6 ml-16 sm:pb-7">
                     <p class="text-2xl font-semibold text-gray-900">
-                        58.16%
+                        {{$ordersCount}}
                     </p>
                     <p
                         class="flex items-baseline ml-2 text-sm font-semibold text-green-600"
@@ -131,7 +131,7 @@
                             />
                         </svg>
                         <span class="sr-only"> Increased by </span>
-                        5.4%
+                        0%
                     </p>
                     <div
                         class="absolute inset-x-0 bottom-0 px-4 py-4 bg-gray-50 sm:px-6"
@@ -180,7 +180,7 @@
                 </dt>
                 <dd class="flex items-baseline pb-6 ml-16 sm:pb-7">
                     <p class="text-2xl font-semibold text-gray-900">
-                        24.57%
+                        Rp {{$profit}}
                     </p>
                     <p
                         class="flex items-baseline ml-2 text-sm font-semibold text-red-600"
@@ -200,7 +200,7 @@
                             />
                         </svg>
                         <span class="sr-only"> Decreased by </span>
-                        3.2%
+                        0%
                     </p>
                     <div
                         class="absolute inset-x-0 bottom-0 px-4 py-4 bg-gray-50 sm:px-6"

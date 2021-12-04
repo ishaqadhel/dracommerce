@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
+use App\Models\User;
 
 class AdminDashboardController extends Controller
 {
@@ -11,6 +13,9 @@ class AdminDashboardController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+        $usersCount = User::count();
+        $ordersCount = Order::count();
+        $profit = Order::where('status', '<>', Order::STATUS_NOT_PAID)->sum('total');
+        return view('admin.index', compact('usersCount', 'ordersCount', 'profit'));
     }
 }
