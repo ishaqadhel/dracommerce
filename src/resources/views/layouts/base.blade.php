@@ -157,7 +157,7 @@
                                                 @auth
                                                     @if(auth()->user()->role == 2)
                                                     <a
-                                                        href="#"
+                                                        href="{{route('admin.index')}}"
                                                         class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                         >Admin Panel</a
                                                     >

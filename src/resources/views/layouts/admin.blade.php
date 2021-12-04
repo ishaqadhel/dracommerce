@@ -120,12 +120,12 @@
                                                 class="flex justify-center h-full space-x-8"
                                             >
                                                 <a
-                                                    href="#"
+                                                    href="{{route('admin.index')}}"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                     >Beranda</a
                                                 >
                                                 <a
-                                                    href="#"
+                                                    href="{{route('admin.user.index')}}"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                     >Pengaturan Pengguna</a
                                                 >
