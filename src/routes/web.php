@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\AdminProductController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\LandingController;
 use App\Http\Middleware\AdminMiddleware;
@@ -26,6 +27,14 @@ Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->grou
         Route::get('/{id}/edit', [AdminUserController::class, 'edit'])->name('edit');
         Route::put('/{id}', [AdminUserController::class, 'update'])->name('update');
         Route::delete('/{id}', [AdminUserController::class, 'destroy'])->name('destroy');
+    });
+    Route::middleware(AdminMiddleware::class)->prefix('product')->name('product.')->group(function () {
+        Route::get('/', [AdminProductController::class, 'index'])->name('index');
+        Route::get('/create', [AdminProductController::class, 'create'])->name('create');
+        Route::post('/', [AdminProductController::class, 'store'])->name('store');
+        Route::get('/{id}/edit', [AdminProductController::class, 'edit'])->name('edit');
+        Route::put('/{id}', [AdminProductController::class, 'update'])->name('update');
+        Route::delete('/{id}', [AdminProductController::class, 'destroy'])->name('destroy');
     });
 });
 

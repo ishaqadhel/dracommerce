@@ -135,7 +135,7 @@
                                                     >Pengaturan Order</a
                                                 >
                                                 <a
-                                                    href="#"
+                                                    href="{{route('admin.product.index')}}"
                                                     class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                                                     >Pengaturan Produk</a
                                                 >
