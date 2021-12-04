@@ -1,5 +1,7 @@
 # MPPL E 05
 
+**Link Template:** https://tw.thcl.dev/components/
+
 ## Usecase
 
 ### 1. Melakukan Pendaftaran
