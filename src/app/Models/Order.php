@@ -30,4 +30,21 @@ class Order extends Model
         'total',
         'status',
     ];
+
+    public function productsOrders()
+    {
+        return $this->hasMany(ProductOrder::class, 'id_order', 'id');
+    }
+
+    public function city() {
+        return $this->belongsTo(City::class, 'id_city', 'id');
+    }
+
+    public function paymentType() {
+        return $this->belongsTo(PaymentType::class, 'id_payment_type', 'id');
+    }
+
+    public function user() {
+        return $this->belongsTo(User::class, 'id_user', 'id');
+    }
 }

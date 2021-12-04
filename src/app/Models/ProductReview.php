@@ -25,4 +25,12 @@ class ProductReview extends Model
         'rating',
         'description',
     ];
+
+    public function user() {
+        return $this->belongsTo(User::class, 'id_user', 'id');
+    }
+
+    public function product() {
+        return $this->belongsTo(Product::class, 'id_product', 'id');
+    }
 }

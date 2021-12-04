@@ -24,4 +24,14 @@ class City extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'id_city', 'id');
+    }
+
+    public function users()
+    {
+        return $this->hasMany(User::class, 'id_city', 'id');
+    }
 }

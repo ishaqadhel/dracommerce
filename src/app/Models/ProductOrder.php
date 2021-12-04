@@ -24,4 +24,12 @@ class ProductOrder extends Model
     protected $fillable = [
         'quantity',
     ];
+
+    public function order() {
+        return $this->belongsTo(Order::class, 'id_order', 'id');
+    }
+
+    public function product() {
+        return $this->belongsTo(Product::class, 'id_product', 'id');
+    }
 }

@@ -24,4 +24,13 @@ class Cart extends Model
     protected $fillable = [
         'total',
     ];
+
+    public function productsCarts()
+    {
+        return $this->hasMany(ProductCart::class, 'id_cart', 'id');
+    }
+
+    public function user() {
+        return $this->belongsTo(User::class, 'id_user', 'id');
+    }
 }

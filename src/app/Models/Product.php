@@ -28,4 +28,23 @@ class Product extends Model
         'price',
         'image',
     ];
+
+    public function productsCarts()
+    {
+        return $this->hasMany(ProductCart::class, 'id_product', 'id');
+    }
+
+    public function productsReviews()
+    {
+        return $this->hasMany(ProductReview::class, 'id_product', 'id');
+    }
+
+    public function productsOrders()
+    {
+        return $this->hasMany(ProductOrder::class, 'id_product', 'id');
+    }
+
+    public function productCategory() {
+        return $this->belongsTo(ProductCategory::class, 'id_product_category', 'id');
+    }
 }
