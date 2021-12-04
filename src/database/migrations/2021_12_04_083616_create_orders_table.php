@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,23 +13,24 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_user');
             $table->unsignedBigInteger('id_city');
+            $table->unsignedBigInteger('id_payment_type');
             $table->string('name');
             $table->text('address');
             $table->string('phone');
             $table->integer('zip');
+            $table->text('note');
+            $table->integer('total');
             $table->integer('status');
-            $table->integer('role');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
 
             // foreign key constraints
+            $table->foreign('id_user')->references('id')->on('users');
             $table->foreign('id_city')->references('id')->on('cities');
+            $table->foreign('id_payment_type')->references('id')->on('payments_types');
         });
     }
 
@@ -40,6 +41,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('orders');
     }
 }
