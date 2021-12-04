@@ -64,12 +64,37 @@
                             >
                                 Dapatkan Voucher Gratis Ongkir Sampai 100%
                             </p>
-
+                            @auth
+                            <div
+                                class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
+                            >
+                                <p
+                                    href="{{ route('register') }}"
+                                    class="text-sm font-medium text-white hover:text-gray-100"
+                                >
+                                    Hello, {{ auth()->user()->name }}
+                                </p>
+                                <span
+                                    class="w-px h-6 bg-gray-600"
+                                    aria-hidden="true"
+                                ></span>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <p
+                                        class="text-sm font-medium text-white cursor-pointer hover:text-gray-100"
+                                        onclick="event.preventDefault();
+                                            this.closest('form').submit();"
+                                    >
+                                        Keluar Akun
+                                    </p>
+                                </form>
+                            </div>
+                            @else     
                             <div
                                 class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
                             >
                                 <a
-                                    href="#"
+                                    href="{{ route('register') }}"
                                     class="text-sm font-medium text-white hover:text-gray-100"
                                     >Buat Akun</a
                                 >
@@ -78,11 +103,12 @@
                                     aria-hidden="true"
                                 ></span>
                                 <a
-                                    href="#"
+                                    href="{{ route('login') }}"
                                     class="text-sm font-medium text-white hover:text-gray-100"
                                     >Masuk Akun</a
                                 >
                             </div>
+                            @endauth
                         </div>
                     </div>
 
@@ -176,6 +202,7 @@
                                     <div
                                         class="flex items-center justify-end flex-1"
                                     >
+                                    @auth
                                         <div class="flex items-center lg:ml-8">
                                             <div class="flex space-x-8">
                                                 <div class="flex">
@@ -243,6 +270,7 @@
                                                 </a>
                                             </div>
                                         </div>
+                                    @endauth
                                     </div>
                                 </div>
                             </div>
