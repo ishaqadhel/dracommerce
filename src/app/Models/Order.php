@@ -9,6 +9,11 @@ class Order extends Model
 {
     use HasFactory;
 
+    const STATUS_NOT_PAID = 1;
+    const STATUS_PAID = 2;
+    const STATUS_SHIPPING = 3;
+    const STATUS_DONE = 4;
+
     /**
      * The table associated with the model.
      *
@@ -22,6 +27,9 @@ class Order extends Model
      * @var array
      */
     protected $fillable = [
+        'id_user',
+        'id_city',
+        'id_payment_type',
         'name',
         'address',
         'phone',

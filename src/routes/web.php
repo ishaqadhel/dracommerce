@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminProductController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\ProductController;
 use App\Http\Middleware\AdminMiddleware;
@@ -30,6 +31,12 @@ Route::prefix('product')->name('product.')->group(function () {
 Route::middleware(['auth'])->prefix('cart')->name('cart.')->group(function () {
     Route::get('/', [CartController::class, 'index'])->name('index');
     Route::post('/add-item/{id}', [CartController::class, 'addItem'])->name('addItem');
+    Route::delete('/remove-item/{id}', [CartController::class, 'removeItem'])->name('removeItem');
+});
+
+Route::middleware(['auth'])->prefix('checkout')->name('checkout.')->group(function () {
+    Route::get('/', [CheckoutController::class, 'index'])->name('index');
+    Route::post('/', [CheckoutController::class, 'store'])->name('store');
 });
 
 Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->group(function () {

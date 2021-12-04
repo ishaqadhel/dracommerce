@@ -119,25 +119,28 @@
                         {{ $product->description }}
                     </p>
 
-                    <div
-                        class="grid grid-cols-1 mt-10 gap-x-6 gap-y-4 sm:grid-cols-2"
-                    >
-                        <button
-                            type="button"
-                            class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-cerise-600 hover:bg-cerise-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-cerise-500"
+                    <form method="POST" action="{{ route('cart.addItem', ['id' => $product->id]) }}">
+                        <div
+                            class="grid grid-cols-1 mt-10 gap-x-6 gap-y-4 sm:grid-cols-2"
                         >
-                            Beli Sekarang
-                        </button>
-                        <form method="POST" action="{{ route('cart.addItem', ['id' => $product->id]) }}">
-                            @csrf
-                            <button
-                                type="submit"
-                                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-cerise-700 bg-cerise-50 hover:bg-cerise-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-cerise-500"
-                            >
-                                Masukan Keranjang
-                            </button>
-                        </form>
-                    </div>
+                                @csrf
+                                <select
+                                    id="quantity"
+                                    name="quantity"
+                                    class="block max-w-full rounded-md border border-gray-300 py-1.5 text-base leading-5 font-medium text-gray-700 text-left shadow-sm focus:outline-none focus:ring-1 focus:ring-cerise-500 focus:border-cerise-500 sm:text-sm"
+                                >
+                                @for ($i = 1; $i <= $product->stock; $i++)
+                                    <option value="{{ $i }}">{{ $i }}</option>
+                                @endfor
+                                </select>
+                                <button
+                                    type="submit"
+                                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-cerise-700 bg-cerise-50 hover:bg-cerise-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-cerise-500"
+                                >
+                                    Masukan Keranjang
+                                </button>
+                        </div>
+                    </form>
 
                     <div class="pt-10 mt-10 border-t border-gray-200">
                         <h3 class="text-sm font-medium text-gray-900">

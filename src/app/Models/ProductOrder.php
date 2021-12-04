@@ -22,6 +22,8 @@ class ProductOrder extends Model
      * @var array
      */
     protected $fillable = [
+        'id_product',
+        'id_order',
         'quantity',
     ];
 
