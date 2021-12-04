@@ -216,7 +216,7 @@
                                             <div class="flex space-x-8">
                                                 <div class="flex">
                                                     <a
-                                                        href="#"
+                                                        href="{{route('account.edit')}}"
                                                         class="p-2 -m-2 text-gray-400 hover:text-gray-500"
                                                     >
                                                         <span class="sr-only"

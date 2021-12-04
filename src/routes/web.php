@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminOrderController;
 use App\Http\Controllers\Admin\AdminProductController;
@@ -38,6 +39,11 @@ Route::middleware(['auth'])->prefix('cart')->name('cart.')->group(function () {
 Route::middleware(['auth'])->prefix('checkout')->name('checkout.')->group(function () {
     Route::get('/', [CheckoutController::class, 'index'])->name('index');
     Route::post('/', [CheckoutController::class, 'store'])->name('store');
+});
+
+Route::middleware(['auth'])->prefix('account')->name('account.')->group(function () {
+    Route::get('/edit', [AccountController::class, 'edit'])->name('edit');
+    Route::put('/', [AccountController::class, 'update'])->name('update');
 });
 
 Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->group(function () {
