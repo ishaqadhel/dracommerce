@@ -54,6 +54,7 @@ Route::middleware(['auth'])->prefix('account')->name('account.')->group(function
 
 Route::middleware(['auth'])->prefix('order')->name('order.')->group(function () {
     Route::get('/', [OrderController::class, 'index'])->name('index');
+    Route::put('/', [OrderController::class, 'cancel'])->name('cancel');
 });
 
 Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->group(function () {

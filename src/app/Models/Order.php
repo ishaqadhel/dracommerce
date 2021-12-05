@@ -9,6 +9,7 @@ class Order extends Model
 {
     use HasFactory;
 
+    const STATUS_CANCELED = 0;
     const STATUS_NOT_PAID = 1;
     const STATUS_PAID = 2;
     const STATUS_SHIPPING = 3;

@@ -92,6 +92,8 @@
                                                 Sudah Dibayar
                                             @elseif($order->status == 3)
                                                 Sedang Dikirim
+                                            @elseif($order->status == 0)
+                                                Batal
                                             @else
                                                 Sudah Sampai
                                             @endif
@@ -103,6 +105,22 @@
                                     <td class='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
                                         Rp {{$order->total}}
                                     </td>
+                                    @if($order->status == 1)
+                                    <td class='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
+                                        <form method="POST" action="{{ route('order.cancel') }}">
+                                            @csrf
+                                            <p
+                                                class='text-red-600 cursor-pointer hover:text-red-900'
+                                                onclick="event.preventDefault();
+                                                    this.closest('form').submit();"
+                                            >
+                                                Cancel
+                                            </p>
+                                            <input type="hidden" name="id_order" value={{$order->id}}>
+                                            <input type="hidden" name="_method" value="PUT">
+                                        </form>
+                                    </td>
+                                    @endif
                                 </tr>
                             @endforeach
                         </tbody>

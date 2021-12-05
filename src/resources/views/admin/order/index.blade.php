@@ -92,6 +92,8 @@
                                                 Sudah Dibayar
                                             @elseif($order->status == 3)
                                                 Sedang Dikirim
+                                            @elseif($order->status == 0)
+                                                Batal
                                             @else
                                                 Sudah Sampai
                                             @endif
