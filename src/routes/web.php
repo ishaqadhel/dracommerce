@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Route;
@@ -44,6 +45,10 @@ Route::middleware(['auth'])->prefix('checkout')->name('checkout.')->group(functi
 Route::middleware(['auth'])->prefix('account')->name('account.')->group(function () {
     Route::get('/edit', [AccountController::class, 'edit'])->name('edit');
     Route::put('/', [AccountController::class, 'update'])->name('update');
+});
+
+Route::middleware(['auth'])->prefix('order')->name('order.')->group(function () {
+    Route::get('/', [OrderController::class, 'index'])->name('index');
 });
 
 Route::middleware(AdminMiddleware::class)->prefix('admin')->name('admin.')->group(function () {
