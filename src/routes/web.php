@@ -10,6 +10,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductReviewController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,10 @@ Route::get('/', [LandingController::class, 'index'])->name('index');
 Route::prefix('product')->name('product.')->group(function () {
     Route::get('/', [ProductController::class, 'index'])->name('index');
     Route::get('/{id}', [ProductController::class, 'show'])->name('show');
+    Route::prefix('review')->name('review.')->group(function () {
+        Route::get('/{id}/create', [ProductReviewController::class, 'create'])->name('create');
+        Route::post('/', [ProductReviewController::class, 'store'])->name('store');
+    });
 });
 
 Route::middleware(['auth'])->prefix('cart')->name('cart.')->group(function () {

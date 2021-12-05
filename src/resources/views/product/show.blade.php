@@ -43,76 +43,6 @@
                                 Tersisa {{ $product->stock }} barang
                             </p>
                         </div>
-
-                        <div>
-                            <h3 class="sr-only">Reviews</h3>
-                            <div class="flex items-center">
-                                <svg
-                                    class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                    />
-                                </svg>
-
-                                <!-- Heroicon name: solid/star -->
-                                <svg
-                                    class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                    />
-                                </svg>
-
-                                <!-- Heroicon name: solid/star -->
-                                <svg
-                                    class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                    />
-                                </svg>
-
-                                <!-- Heroicon name: solid/star -->
-                                <svg
-                                    class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                    />
-                                </svg>
-
-                                <!-- Heroicon name: solid/star -->
-                                <svg
-                                    class="flex-shrink-0 w-5 h-5 text-gray-300"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                    />
-                                </svg>
-                            </div>
-                            <p class="sr-only">4 out of 5 stars</p>
-                        </div>
                     </div>
 
                     <p class="mt-6 text-gray-500">
@@ -224,7 +154,7 @@
                     <div>
                         <div class="border-b border-gray-200">
                             <div
-                                class="flex -mb-px space-x-8"
+                                class="flex justify-between -mb-px space-x-8"
                                 aria-orientation="horizontal"
                                 role="tablist"
                             >
@@ -237,6 +167,17 @@
                                 >
                                     Customer Reviews
                                 </button>
+                                <a href="{{route('product.review.create', ['id' => $product->id])}}">
+                                    <button
+                                        id="tab-reviews"
+                                        class="py-6 text-sm font-bold border-b-2 border-transparent text-cerise-700 hover:text-cerise-800 whitespace-nowrap"
+                                        aria-controls="tab-panel-reviews"
+                                        role="tab"
+                                        type="button"
+                                    >
+                                        + Tambah Review
+                                    </button>
+                                </a>
                             </div>
                         </div>
 
@@ -250,12 +191,13 @@
                         >
                             <h3 class="sr-only">Customer Reviews</h3>
 
+                            @foreach($product->productsReviews as $review)
                             <div
                                 class="flex space-x-4 text-sm text-gray-500"
                             >
                                 <div class="flex-none py-10">
                                     <img
-                                        src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
+                                        src="https://ps.w.org/simple-user-avatar/assets/icon-128x128.png?rev=2413146"
                                         alt=""
                                         class="w-10 h-10 bg-gray-100 rounded-full"
                                     />
@@ -264,20 +206,16 @@
                                     <h3
                                         class="font-medium text-gray-900"
                                     >
-                                        Emily Selman
+                                        {{ $review->user->name }}
                                     </h3>
                                     <p>
                                         <time datetime="2021-07-16"
-                                            >July 16, 2021</time
+                                            >{{$review->created_at}}</time
                                         >
                                     </p>
 
                                     <div class="flex items-center mt-4">
-                                        <!--
-              Heroicon name: solid/star
-
-              Active: "text-yellow-400", Default: "text-gray-300"
-            -->
+                                        @for($i = 0; $i < $review->rating; $i++)
                                         <svg
                                             class="flex-shrink-0 w-5 h-5 text-yellow-400"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -289,58 +227,7 @@
                                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                             />
                                         </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
+                                        @endfor
                                     </div>
                                     <p class="sr-only">
                                         5 out of 5 stars
@@ -350,129 +237,12 @@
                                         class="mt-4 prose-sm prose text-gray-500 max-w-none"
                                     >
                                         <p>
-                                            This icon pack is just what
-                                            I need for my latest
-                                            project. There's an icon for
-                                            just about anything I could
-                                            ever need. Love the playful
-                                            look!
+                                            {{ $review->description }}
                                         </p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div
-                                class="flex space-x-4 text-sm text-gray-500"
-                            >
-                                <div class="flex-none py-10">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
-                                        alt=""
-                                        class="w-10 h-10 bg-gray-100 rounded-full"
-                                    />
-                                </div>
-                                <div
-                                    class="flex-1 py-10 border-t border-gray-200"
-                                >
-                                    <h3
-                                        class="font-medium text-gray-900"
-                                    >
-                                        Hector Gibbons
-                                    </h3>
-                                    <p>
-                                        <time datetime="2021-07-12"
-                                            >July 12, 2021</time
-                                        >
-                                    </p>
-
-                                    <div class="flex items-center mt-4">
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-
-                                        <!-- Heroicon name: solid/star -->
-                                        <svg
-                                            class="flex-shrink-0 w-5 h-5 text-yellow-400"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <p class="sr-only">
-                                        5 out of 5 stars
-                                    </p>
-
-                                    <div
-                                        class="mt-4 prose-sm prose text-gray-500 max-w-none"
-                                    >
-                                        <p>
-                                            Blown away by how polished
-                                            this icon pack is.
-                                            Everything looks so
-                                            consistent and each SVG is
-                                            optimized out of the box so
-                                            I can use it directly with
-                                            confidence. It would take me
-                                            several hours to create a
-                                            single icon this good, so
-                                            it's a steal at this price.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
+                            @endforeach
                             <!-- More reviews... -->
                         </div>
                     </div>
